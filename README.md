@@ -13,6 +13,10 @@
 
 **Code Churn Insights** 是一个创新的 VS Code 插件，通过深度分析 Git 提交历史，自动识别项目中的"代码热点"——那些频繁变动且容易出 Bug 的文件。
 
+### 项目介绍视频
+
+[VsCode插件-Code Churn Insights-让你迅速定位高风险代码！](https://www.bilibili.com/video/BV1VbyEBHEcv/)
+
 ### 🚀 30 秒快速上手
 
 1. **安装插件**：在 VS Code 扩展市场搜索 "Code Churn Insights" 或从 [.vsix 文件](https://github.com/linghuchong6668/Code-Churn-Insights/releases) 安装
@@ -38,9 +42,6 @@
 - **技术债务难量化**？→ 定期分析，跟踪高风险文件数量变化
 - **新人不熟悉项目**？→ 快速了解哪些是核心模块，哪些需谨慎修改
 
-### 项目介绍视频
-
-[VsCode插件-Code Churn Insights-让你迅速定位高风险代码！](https://www.bilibili.com/video/BV1VbyEBHEcv/)
 
 ### ✨ 核心优势
 
