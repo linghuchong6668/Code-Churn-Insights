@@ -1,0 +1,92 @@
+{
+  "name": "code-churn-insights",
+  "displayName": "Code Churn Insights",
+  "description": "分析代码变动频率和Bug修复频率，识别高风险文件",
+  "version": "1.0.0",
+  "publisher": "code-churn",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "git",
+    "code quality",
+    "technical debt",
+    "refactoring",
+    "code analysis",
+    "代码分析",
+    "技术债务",
+    "重构"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/code-churn-insights.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/code-churn-insights/issues"
+  },
+  "homepage": "https://github.com/yourusername/code-churn-insights#readme",
+  "license": "MIT",
+  "activationEvents": [
+    "onCommand:codeChurn.analyzeRepository"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeChurn.analyzeRepository",
+        "title": "Code Churn: 分析当前仓库"
+      }
+    ],
+    "configuration": {
+      "title": "Code Churn Insights",
+      "properties": {
+        "codeChurn.analysis.since": {
+          "type": "string",
+          "default": "90 days ago",
+          "description": "分析的时间范围（如：'90 days ago', '6 months ago'）"
+        },
+        "codeChurn.analysis.bugKeywords": {
+          "type": "array",
+          "default": [
+            "fix",
+            "bug",
+            "hotfix",
+            "修复",
+            "bugfix"
+          ],
+          "description": "用于识别Bug修复的关键词列表"
+        },
+        "codeChurn.analysis.ignorePaths": {
+          "type": "array",
+          "default": [
+            "node_modules/**",
+            "dist/**",
+            "build/**",
+            "*.min.js"
+          ],
+          "description": "需要忽略的路径列表"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.75.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "icon": "resources/icon.png"
+}
