@@ -2,7 +2,7 @@
 
 > 基于 Git 提交历史分析的 VS Code 插件，智能识别代码库中的高风险文件和技术债务
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://gitee.com/yourusername/code-churn-insights)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://gitee.com/linghuchong6668/vscode_extension)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![VS Code](https://img.shields.io/badge/VS%20Code-%3E%3D1.75.0-007ACC.svg)](https://code.visualstudio.com/)
 
@@ -103,8 +103,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://gitee.com/yourusername/code-churn-insights.git
-cd code-churn-insights
+git clone https://gitee.com/linghuchong6668/vscode_extension.git
+cd vscode_extension
 
 # 安装依赖
 npm install
